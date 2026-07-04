@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 720" role="img" aria-label="个人照片占位">
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f9fbfa"/>
+      <stop offset="1" stop-color="#e6efeb"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef4f1"/>
+      <stop offset="1" stop-color="#cbd9d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="720" rx="8" fill="url(#background)"/>
+  <path d="M0 0h560v720H0z" fill="none"/>
+  <g opacity=".38" stroke="#496b5d" stroke-width="1">
+    <path d="M62 88h436M62 168h436M62 248h436M62 328h436M62 408h436M62 488h436M62 568h436"/>
+    <path d="M92 58v604M172 58v604M252 58v604M332 58v604M412 58v604M492 58v604"/>
+  </g>
+  <circle cx="282" cy="230" r="92" fill="#dbe7e2"/>
+  <path d="M192 230c18-78 64-120 117-111 50 8 79 51 65 111-18-34-47-51-88-51-43 0-74 17-94 51Z" fill="#315046" opacity=".78"/>
+  <path d="M158 645c20-135 68-206 123-206 56 0 104 71 124 206H158Z" fill="url(#coat)"/>
+  <path d="M224 442c22 28 88 28 113 0l-19 102h-75l-19-102Z" fill="#dbe7e2"/>
+  <path d="M180 646h204" stroke="#496b5d" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+  <circle cx="424" cy="142" r="22" fill="none" stroke="#496b5d" stroke-width="2" opacity=".5"/>
+  <circle cx="444" cy="164" r="7" fill="#496b5d" opacity=".25"/>
+  <path d="M392 586c41-12 70-42 88-92" fill="none" stroke="#496b5d" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+</svg>
