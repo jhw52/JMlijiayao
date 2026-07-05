@@ -5,6 +5,8 @@ type HeroProps = {
 };
 
 export function Hero({ profile }: HeroProps) {
+  const photoSrc = `${import.meta.env.BASE_URL}${profile.photo.src.replace(/^\//, "")}`;
+
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-copy">
@@ -25,7 +27,7 @@ export function Hero({ profile }: HeroProps) {
       <aside className="observation-panel" aria-label="生命科学观察记录">
         <div className="panel-grid" aria-hidden="true" />
         <figure className="profile-photo-frame">
-          <img src={profile.photo.src} alt={profile.photo.alt} />
+          <img src={photoSrc} alt={profile.photo.alt} />
         </figure>
         <div className="specimen-orbit">
           <span className="orbit-cell cell-a" />

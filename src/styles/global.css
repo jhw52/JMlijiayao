@@ -289,8 +289,8 @@ main {
 .observation-panel {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(150px, 0.52fr);
-  gap: 1.1rem;
+  grid-template-columns: minmax(245px, 1fr) minmax(132px, 0.42fr);
+  gap: 0.9rem;
   align-items: start;
   min-height: 520px;
   overflow: hidden;
@@ -319,9 +319,9 @@ main {
   z-index: 1;
   align-self: center;
   justify-self: start;
-  width: min(100%, 318px);
+  width: min(100%, 332px);
   aspect-ratio: 4 / 5;
-  margin: 52px 0 96px;
+  margin: 44px 0 98px;
   overflow: hidden;
   border: 1px solid rgb(73 107 93 / 0.28);
   border-radius: var(--radius);
@@ -348,7 +348,7 @@ main {
 
 .specimen-orbit {
   position: absolute;
-  inset: 8% 7% 26% 18%;
+  inset: 8% 6% 26% 24%;
   z-index: 0;
   border: 1px solid rgb(73 107 93 / 0.22);
   border-radius: 50%;
@@ -407,7 +407,9 @@ main {
   right: 28px;
   bottom: 30px;
   left: 28px;
+  z-index: 2;
   border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, rgb(251 252 251 / 0.7), rgb(251 252 251 / 0.92));
   padding-top: 1rem;
   color: var(--text-muted);
   line-height: 1.75;
@@ -429,7 +431,7 @@ main {
   justify-self: end;
   display: grid;
   gap: 0.65rem;
-  width: min(100%, 205px);
+  width: min(100%, 158px);
   min-width: 0;
   margin: 0;
   border: 1px solid var(--line);
@@ -440,8 +442,8 @@ main {
 
 .micro-record div {
   display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 0.18rem;
 }
 
 .micro-record dt,
@@ -836,7 +838,7 @@ p {
   }
 
   .observation-panel {
-    grid-template-columns: minmax(0, 0.72fr) minmax(150px, 0.48fr);
+    grid-template-columns: minmax(230px, 1fr) minmax(126px, 0.38fr);
     min-height: 470px;
   }
 
