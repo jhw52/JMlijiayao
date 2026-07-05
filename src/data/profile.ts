@@ -28,7 +28,7 @@ export const profile = {
   heroSubtext:
     "Currently studying animal medicine, clinical diagnosis and laboratory examination.",
   photo: {
-    src: "/profile-photo.svg",
+    src: "/lijiayao-photo.jpg",
     alt: "李佳瑶个人照片",
   },
   email: "2959802830@qq.com",
