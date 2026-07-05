@@ -288,6 +288,10 @@ main {
 
 .observation-panel {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(150px, 0.52fr);
+  gap: 1.1rem;
+  align-items: start;
   min-height: 520px;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -295,12 +299,14 @@ main {
   background:
     linear-gradient(145deg, rgb(251 252 251 / 0.92), rgb(238 244 241 / 0.72)),
     var(--surface-elevated);
+  padding: 32px;
   box-shadow: var(--shadow-soft);
 }
 
 .panel-grid {
   position: absolute;
   inset: 22px;
+  z-index: 0;
   border: 1px solid rgb(73 107 93 / 0.14);
   background:
     linear-gradient(90deg, rgb(73 107 93 / 0.09) 1px, transparent 1px),
@@ -309,12 +315,13 @@ main {
 }
 
 .profile-photo-frame {
-  position: absolute;
-  inset: 78px auto auto 34px;
+  position: relative;
   z-index: 1;
-  width: min(58%, 280px);
-  aspect-ratio: 5 / 6;
-  margin: 0;
+  align-self: center;
+  justify-self: start;
+  width: min(100%, 318px);
+  aspect-ratio: 4 / 5;
+  margin: 52px 0 96px;
   overflow: hidden;
   border: 1px solid rgb(73 107 93 / 0.28);
   border-radius: var(--radius);
@@ -336,11 +343,13 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 38%;
 }
 
 .specimen-orbit {
   position: absolute;
-  inset: 8% 7% 28% 20%;
+  inset: 8% 7% 26% 18%;
+  z-index: 0;
   border: 1px solid rgb(73 107 93 / 0.22);
   border-radius: 50%;
 }
@@ -415,13 +424,13 @@ main {
 }
 
 .micro-record {
-  position: absolute;
-  top: 32px;
-  right: 28px;
+  position: relative;
   z-index: 2;
+  justify-self: end;
   display: grid;
   gap: 0.65rem;
-  min-width: 190px;
+  width: min(100%, 205px);
+  min-width: 0;
   margin: 0;
   border: 1px solid var(--line);
   border-radius: var(--radius-small);
@@ -827,7 +836,13 @@ p {
   }
 
   .observation-panel {
-    min-height: 420px;
+    grid-template-columns: minmax(0, 0.72fr) minmax(150px, 0.48fr);
+    min-height: 470px;
+  }
+
+  .profile-photo-frame {
+    width: min(100%, 300px);
+    margin: 44px 0 96px;
   }
 
   .about-layout,
@@ -919,19 +934,22 @@ p {
   }
 
   .observation-panel {
-    min-height: 360px;
+    grid-template-columns: 1fr;
+    min-height: 500px;
+    padding: 18px;
   }
 
   .profile-photo-frame {
-    inset: 74px auto auto 18px;
-    width: min(54%, 210px);
+    justify-self: center;
+    width: min(76%, 260px);
+    margin: 34px 0 120px;
   }
 
   .micro-record {
+    position: absolute;
+    top: 18px;
     right: 18px;
-    left: auto;
-    max-width: min(50%, 190px);
-    min-width: 0;
+    width: min(46%, 178px);
   }
 
   .micro-record div {
